@@ -25,7 +25,7 @@ if (parent->left != NULL)
 {
 /* New node's left child becomes the parent left child*/
 new_node->left = parent->left;
-parent->left->parent = new_node; /* old left child becomes parent to new node*/
+parent->left->parent = new_node; /* old left child becomes left child to new node*/
 }
 
 parent->left = new_node; /*New node set to left child to the new node*/
